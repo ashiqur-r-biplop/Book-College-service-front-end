@@ -5,12 +5,14 @@ import Collages from '../../Components/Home/Collages';
 import Gallery from '../../Components/Home/Gallery';
 import TestimonialSlider from '../../Components/Home/TestimonialSlider';
 import NewsLatter from '../../Components/Home/NewsLatter';
+import ResearchPaper from '../../Components/Home/Researchpaper';
 
 const Home = () => {
     return (
         <div>
             <Banner />
             <Collages />
+            <ResearchPaper />
             <Gallery />
             <TestimonialSlider />
             <NewsLatter />

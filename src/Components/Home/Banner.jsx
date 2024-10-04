@@ -23,13 +23,13 @@ const Banner = () => {
                         <input
                             type="text"
                             placeholder="Search for a college name."
-                            className={`border p-2 px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px]' : 'w-[150px]'
+                            className={`border p-2 py-[15px] px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px]' : 'w-[150px]'
                                 }`}
                             onFocus={() => setIsFocused(true)}
                             onBlur={() => setIsFocused(false)}
                             onChange={(e) => setIsValue(e.target.value)}
                         />
-                        <button className='bg-base-200 pb-[13px] pt-[12px] px-[20px] rounded-e-full'><IoSearch /></button>
+                        <button className='bg-base-200 pb-[19px] pt-[20px] px-[20px] rounded-e-full'><IoSearch /></button>
                     </div>
                     <div className="flex gap-[20px]">
                         <button className="uppercase bg-[#fddf47af] hover:bg-[#FDE047] transition-all hover:text-[#19191D] border border-[#FDE047] rounded-full text-white md:text-[22px] px-[30px] py-[5px]">Get Started</button>

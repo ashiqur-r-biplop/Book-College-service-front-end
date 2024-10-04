@@ -36,31 +36,31 @@ const TestimonialSlider = () => {
                     [
                         {
                             reviewImage: person1,
-                            reviewName: "John Doe",
+                            reviewName: "National college",
                             reviewDescription: "I had an excellent experience with the college booking platform. It made finding the perfect college simple and easy. The detailed reviews and the admission process guidance were extremely helpful.",
                             reviewIcon: ["⭐", "⭐", "⭐", "⭐", "⭐"]
                         },
                         {
                             reviewImage: person2,
-                            reviewName: "Jane Smith",
+                            reviewName: "Dhaka college",
                             reviewDescription: "The user-friendly interface made it very easy to compare colleges. The search functionality was fast, and I quickly found a college that matched my needs.",
                             reviewIcon: ["⭐", "⭐", "⭐", "⭐"]
                         },
                         {
                             reviewImage: person3,
-                            reviewName: "Michael Brown",
+                            reviewName: "Imperial College",
                             reviewDescription: "Great platform for students! It provides comprehensive information on college rankings, reviews, and admissions. I was able to make a confident decision based on the student reviews.",
                             reviewIcon: ["⭐", "⭐", "⭐", "⭐", "⭐"]
                         },
                         {
                             reviewImage: person4,
-                            reviewName: "Emily Johnson",
+                            reviewName: "City College",
                             reviewDescription: "I appreciate how detailed the college profiles were. I got all the necessary information about the courses and admission requirements. Highly recommend using this platform for future students!",
                             reviewIcon: ["⭐", "⭐", "⭐", "⭐", "⭐"]
                         },
                         {
                             reviewImage: person5,
-                            reviewName: "Sarah Williams",
+                            reviewName: "Ideal College",
                             reviewDescription: "The platform provided great insights into the application process, and the review system helped me choose the right college. Smooth experience overall.",
                             reviewIcon: ["⭐", "⭐", "⭐", "⭐"]
                         }

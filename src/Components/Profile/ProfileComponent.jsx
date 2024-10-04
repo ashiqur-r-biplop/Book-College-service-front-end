@@ -96,6 +96,7 @@ const ProfileComponent = () => {
                 <UpdateUserProfileModal
                     setLoad={setLoad}
                     selectedContact={selectedContact}
+                    photoURL={photoURL}
                 ></UpdateUserProfileModal>
             </div>
         </div>

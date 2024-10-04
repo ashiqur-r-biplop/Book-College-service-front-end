@@ -6,8 +6,9 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import Swal from "sweetalert2";
 
-const UpdateUserProfileModal = ({ selectedContact, setLoad }) => {
 
+
+const UpdateUserProfileModal = ({ selectedContact, setLoad }) => {
     const { register, handleSubmit, } = useForm();
     const onSubmit = data => {
         console.log(data);
@@ -26,6 +27,7 @@ const UpdateUserProfileModal = ({ selectedContact, setLoad }) => {
                     document.getElementById("my_modal_1").close()
                 }
             }).catch((err) => { console.log(err); })
+
     };
 
     return (

@@ -11,6 +11,9 @@ import ErrorPage from "../Pages/404/ErrorPage";
 import Colleges from "../Pages/Colleges/Colleges";
 import Admission from "../Pages/Admission/Admission";
 import MyCollege from "../Pages/MyCollege/MyCollege";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
+import Register from "../Pages/Login/Register";
+import Login from "../Pages/Login/Login";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -31,8 +34,16 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/my-college",
-                element: <MyCollege />
+                element: <PrivateRoute><MyCollege /></PrivateRoute>
             },
+            {
+                path: "/login",
+                element: <Login />
+            },
+            {
+                path: "/register",
+                element: <Register />
+            }
         ]
     }
 ]);

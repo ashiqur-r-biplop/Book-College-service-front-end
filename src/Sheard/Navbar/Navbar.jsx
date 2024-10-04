@@ -20,6 +20,10 @@ const paths = [
         path: "/my-college",
         value: "My College"
     },
+    {
+        path: "/login",
+        value: "Login"
+    },
 ]
 const Navbar = () => {
 

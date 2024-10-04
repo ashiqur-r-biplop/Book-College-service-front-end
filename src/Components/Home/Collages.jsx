@@ -4,7 +4,9 @@ import collegeImage from "../../../public/home-image/college-image.png"
 import { Link } from 'react-router-dom';
 const Collages = () => {
     return (
-        <div className='max-w-[1080px] mx-auto py-[80px]'>
+        <div className='max-w-[1080px] mx-auto py-[30px] md:py-[80px] px-[10px] md:px-0'>
+            <h1 className='text-center md:pt-[20px] md:pb-[60px] pb-[20px] text-[32px] md:text-[52px] font-bold text-[#FDE047]'>Our Collage</h1>
+
             <div className='grid grid-cols-1 md:grid-cols-3 gap-[20px]'>
                 {
                     [1, 2, 3,]?.map((college, i) => {

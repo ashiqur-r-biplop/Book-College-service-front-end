@@ -21,8 +21,8 @@ const paths = [
 ]
 const Footer = () => {
     return (
-        <div className='bg-gray-900'>
-            <footer className="footer container mx-auto text-white p-10">
+        <div className='bg-gray-900 pt-[80px]'>
+            <footer className="footer container mx-auto text-white md:p-10 ps-[10px] py-[30px]">
                 <nav>
                     <h6 className="footer-title">Services</h6>
                     <Link className="link link-hover">Book</Link>
@@ -58,7 +58,7 @@ const Footer = () => {
                             <input
                                 type="text"
                                 placeholder="username@site.com"
-                                className="input input-bordered join-item text-gray-900" />
+                                className="input w-auto input-bordered join-item text-gray-900" />
                             <button className="bg-yellow-300 px-[20px] text-gray-900 join-item">Subscribe</button>
                         </div>
                     </fieldset>

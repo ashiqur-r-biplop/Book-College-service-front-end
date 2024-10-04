@@ -71,7 +71,7 @@ const Navbar = () => {
                                 onBlur={() => setIsFocused(false)}
                                 onChange={(e) => setIsValue(e.target.value)}
                             />
-                            <button className='bg-base-200 py-[13px] px-[20px] rounded-e-full'><IoSearch /></button>
+                            <button className='bg-base-200 pb-[13px] pt-[12px] px-[20px] rounded-e-full'><IoSearch /></button>
                         </div>
                         <div className="navbar-center hidden lg:flex">
                             <ul className="menu-horizontal px-1 flex justify-between gap-[30px]">

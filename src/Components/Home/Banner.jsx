@@ -1,15 +1,15 @@
 import bannerImage from "/public/home-image/banner.png"
 const Banner = () => {
     return (
-        <div className="md:h-[80vh] relative w-[100%]" style={{
+        <div className="md:h-[80vh] relative w-[100%] " style={{
             backgroundImage: `url(${bannerImage})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
         }}>
-            <div className="bg-[#111827a6] w-full h-full flex justify-center items-center">
-                <div className="flex justify-center flex-col items-center text-center gap-[50px]">
+            <div className="bg-[#111827a6] w-full h-full flex justify-center items-center py-[40px]">
+                <div className="flex justify-center flex-col items-center text-center gap-[50px] ">
                     <div>
                         <h1 className="text-[#FDE047] font-bold uppercase text-[28px] md:text-[36px] lg:text-[52px]">Perfect Education Courses</h1>
                         <p className="md:w-[60%] mx-auto md:text-[22px] text-[#eeeeee] mt-[10px]">New skills and knowledge can spark a lifetime of change. For 60 years, Education Development

@@ -25,10 +25,10 @@ const Footer = () => {
             <footer className="footer container mx-auto text-white p-10">
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Book</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <Link className="link link-hover">Book</Link>
+                    <Link className="link link-hover">Design</Link>
+                    <Link className="link link-hover">Marketing</Link>
+                    <Link className="link link-hover">Advertisement</Link>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Company</h6>
@@ -44,9 +44,9 @@ const Footer = () => {
                 </nav>
                 <nav>
                     <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <Link className="link link-hover">Terms of use</Link>
+                    <Link className="link link-hover">Privacy policy</Link>
+                    <Link className="link link-hover">Cookie policy</Link>
                 </nav>
                 <form>
                     <h6 className="footer-title">Newsletter</h6>

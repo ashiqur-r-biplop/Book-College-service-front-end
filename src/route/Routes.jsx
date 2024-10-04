@@ -7,10 +7,15 @@ import {
 } from "react-router-dom";
 import Main from "../Layout/Main/Main";
 import Home from "../Pages/Home/Home";
+import ErrorPage from "../Pages/404/ErrorPage";
+import Colleges from "../Pages/Colleges/Colleges";
+import Admission from "../Pages/Admission/Admission";
+import MyCollege from "../Pages/MyCollege/MyCollege";
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <Main />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: "/",
@@ -18,15 +23,15 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/colleges",
-                element: "colleges"
+                element: <Colleges />
             },
             {
                 path: "/admission",
-                element: "admission"
+                element: <Admission />
             },
             {
                 path: "/my-college",
-                element: "my-college"
+                element: <MyCollege />
             },
         ]
     }

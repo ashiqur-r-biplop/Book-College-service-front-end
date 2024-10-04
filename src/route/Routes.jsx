@@ -14,6 +14,7 @@ import MyCollege from "../Pages/MyCollege/MyCollege";
 import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Register from "../Pages/Login/Register";
 import Login from "../Pages/Login/Login";
+import Profile from "../Pages/Profile/Profile";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
             {
                 path: "/my-college",
                 element: <PrivateRoute><MyCollege /></PrivateRoute>
+            },
+            {
+                path: "/update-user",
+                element: <PrivateRoute> <Profile /></PrivateRoute>
             },
             {
                 path: "/login",

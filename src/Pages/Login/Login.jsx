@@ -12,7 +12,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
-    const { login, signInGoogle, signInGithub, auth } = useContext(AuthContext);
+    const { login, signInGoogle, setLoading, auth } = useContext(AuthContext);
     const [toggleIcon, setToggleIcon] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
@@ -55,6 +55,7 @@ const Login = () => {
 
     const handleGoogleLogin = () => {
         const googleProvider = new GoogleAuthProvider();
+        setLoading(true)
         signInGoogle(googleProvider)
             .then((result) => {
                 const loggedUser = result.user;
@@ -78,6 +79,8 @@ const Login = () => {
                             reset();
                             Swal.fire("Good job!", "User created successfully", "success");
                             navigate(from, { replace: true });
+                            setLoading(false)
+
                         }
                     });
             })

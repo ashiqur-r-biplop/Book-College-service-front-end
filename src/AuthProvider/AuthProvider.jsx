@@ -87,6 +87,7 @@ const AuthProvider = ({ children }) => {
         setFavorite,
         Favorite,
         setReload,
+        setLoading
     };
 
     return (

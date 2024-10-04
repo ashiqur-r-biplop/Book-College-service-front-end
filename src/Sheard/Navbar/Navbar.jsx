@@ -1,32 +1,35 @@
 /* eslint-disable no-unused-vars */
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, NavLink, useParams } from 'react-router-dom';
 import { IoSearch } from "react-icons/io5";
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
-const paths = [
-    {
-        path: "/",
-        value: "Home"
-    },
-    {
-        path: "/colleges",
-        value: "Colleges"
-    },
-    {
-        path: "/admission",
-        value: "Admission"
-    },
-    {
-        path: "/my-college",
-        value: "My College"
-    },
-    {
-        path: "/login",
-        value: "Login"
-    },
-]
 const Navbar = () => {
-
+    const { user, logout } = useContext(AuthContext);
+    console.log(user);
+    const paths = [
+        {
+            path: "/",
+            value: "Home"
+        },
+        {
+            path: "/colleges",
+            value: "Colleges"
+        },
+        {
+            path: "/admission",
+            value: "Admission"
+        },
+        {
+            path: "/my-college",
+            value: "My College"
+        },
+    ]
+    const handleLogout = () => {
+        logout()
+            .then((res) => { })
+            .catch((err) => { });
+    };
     return (
         <div className='bg-gray-900 p-4'>
             <nav className='container mx-auto'>
@@ -65,7 +68,7 @@ const Navbar = () => {
                             </ul>
                         </div>
 
-                        <div className="navbar-center hidden lg:flex">
+                        <div className="navbar-center hidden lg:flex items-center">
                             <ul className="menu-horizontal px-1 flex justify-between gap-[30px]">
                                 {
                                     paths?.map((path, i) => {
@@ -76,7 +79,17 @@ const Navbar = () => {
                                         </li>
                                     })
                                 }
+
                             </ul>
+                            {user?.displayName ? <div className="dropdown dropdown-bottom dropdown-end pl-[20px]">
+                                <div tabIndex={0} role="button" className="text-[#fff]">{user?.displayName}</div>
+                                <ul tabIndex={0} className="dropdown-content menu   z-[99] shadow bg-slate-300 rounded">
+                                    <li><Link to={"/update-user"}>Profile Visit</Link></li>
+                                    <li><button onClick={handleLogout}>Logout</button></li>
+                                </ul>
+                            </div> : <NavLink className={({ isActive }) => {
+                                return isActive ? "text-yellow-300 pl-[20px]" : "text-white hover:bg-transparent pl-[20px] hover:text-yellow-300 transition-all"
+                            }} to={"/login"}>Login</NavLink>}
                         </div>
                     </div>
 

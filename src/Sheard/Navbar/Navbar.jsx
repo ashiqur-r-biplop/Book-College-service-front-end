@@ -22,8 +22,7 @@ const paths = [
     },
 ]
 const Navbar = () => {
-    const [isFocused, setIsFocused] = useState(false);
-    const [isValue, setIsValue] = useState("");
+
     return (
         <div className='bg-gray-900 p-4'>
             <nav className='container mx-auto'>
@@ -61,18 +60,7 @@ const Navbar = () => {
                                 }
                             </ul>
                         </div>
-                        <div className="hidden lg:flex justify-center items-center">
-                            <input
-                                type="text"
-                                placeholder="Search for a college name."
-                                className={`border p-2 px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px]' : 'w-[150px]'
-                                    }`}
-                                onFocus={() => setIsFocused(true)}
-                                onBlur={() => setIsFocused(false)}
-                                onChange={(e) => setIsValue(e.target.value)}
-                            />
-                            <button className='bg-base-200 pb-[13px] pt-[12px] px-[20px] rounded-e-full'><IoSearch /></button>
-                        </div>
+
                         <div className="navbar-center hidden lg:flex">
                             <ul className="menu-horizontal px-1 flex justify-between gap-[30px]">
                                 {

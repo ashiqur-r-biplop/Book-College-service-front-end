@@ -58,7 +58,7 @@ const Register = () => {
                         address,
                     };
                     // console.log(saveUser);
-                    fetch("https://creativa-design-hub-server-site.vercel.app/users", {
+                    fetch("http://localhost:5000/users", {
                         method: "POST",
                         headers: {
                             "content-type": "application/json",
@@ -105,7 +105,7 @@ const Register = () => {
                     role: "student",
                 };
                 // console.log(loggedUser);
-                fetch("https://creativa-design-hub-server-site.vercel.app/users", {
+                fetch("http://localhost:5000/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",
@@ -118,6 +118,7 @@ const Register = () => {
                             reset();
                             Swal.fire("Good job!", "User created successfully", "success");
                             navigate(from, { replace: true });
+
                         }
                     });
             })

@@ -66,7 +66,7 @@ const Login = () => {
                     role: "student",
                 };
                 // console.log(loggedUser);
-                fetch("https://creativa-design-hub-server-site.vercel.app/users", {
+                fetch("http://localhost:5000/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",

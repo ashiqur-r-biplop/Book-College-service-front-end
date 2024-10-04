@@ -4,6 +4,7 @@
   padding: 10px 10px;
   outline: none;
   background-color: transparent;
+  color: white;
 }
 .login-input:focus,
 .login-select:focus {

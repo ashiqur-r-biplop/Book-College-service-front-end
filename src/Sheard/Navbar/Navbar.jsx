@@ -83,7 +83,7 @@ const Navbar = () => {
                             </ul>
                             {user?.displayName ? <div className="dropdown dropdown-bottom dropdown-end pl-[20px]">
                                 <div tabIndex={0} role="button" className="text-[#fff]">{user?.displayName}</div>
-                                <ul tabIndex={0} className="dropdown-content menu   z-[99] shadow bg-slate-300 rounded">
+                                <ul tabIndex={0} className="dropdown-content menu  w-[150px] z-[99] shadow bg-slate-300 rounded">
                                     <li><Link to={"/update-user"}>Profile Visit</Link></li>
                                     <li><button onClick={handleLogout}>Logout</button></li>
                                 </ul>

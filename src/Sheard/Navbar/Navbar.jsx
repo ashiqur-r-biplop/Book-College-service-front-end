@@ -64,8 +64,8 @@ const Navbar = () => {
                         <div className="hidden lg:flex justify-center items-center">
                             <input
                                 type="text"
-                                placeholder="Search College..."
-                                className={`border p-2 px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#fff] bg-transparent ${isValue || isFocused ? 'md:w-[300px]' : 'w-[150px]'
+                                placeholder="Search for a college name."
+                                className={`border p-2 px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px]' : 'w-[150px]'
                                     }`}
                                 onFocus={() => setIsFocused(true)}
                                 onBlur={() => setIsFocused(false)}

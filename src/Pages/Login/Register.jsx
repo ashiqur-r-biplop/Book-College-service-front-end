@@ -125,7 +125,7 @@ const Register = () => {
     };
 
     return (
-        <div className="bg-[#020413c9] h-[100%] md:min-h-[calc(100vh-20px)]">
+        <div className="bg-[#020413c9] h-[100%] md:min-h-[calc(100vh-20px)] pt-[20px]">
             <div className="container mx-auto">
                 <div className="h-full">
                     <form

@@ -21,7 +21,7 @@ const paths = [
 ]
 const Footer = () => {
     return (
-        <div className='bg-gray-900 pt-[80px]'>
+        <div className='bg-gray-900 pt-[80px] -mt-[70px] '>
             <footer className="footer container mx-auto text-white md:p-10 ps-[10px] py-[30px]">
                 <nav>
                     <h6 className="footer-title">Services</h6>

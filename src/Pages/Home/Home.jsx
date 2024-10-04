@@ -4,6 +4,7 @@ import Banner from '../../Components/Home/Banner';
 import Collages from '../../Components/Home/Collages';
 import Gallery from '../../Components/Home/Gallery';
 import TestimonialSlider from '../../Components/Home/TestimonialSlider';
+import NewsLatter from '../../Components/Home/NewsLatter';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Collages />
             <Gallery />
             <TestimonialSlider />
+            <NewsLatter />
         </div>
     );
 };

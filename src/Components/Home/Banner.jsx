@@ -71,7 +71,7 @@ const Banner = () => {
                             }
                         </div>
 
-                        <button className={`bg-base-200 pb-[12px] pt-[13px] px-[20px] ${isFocused || isValue ? "rounded-e" : "rounded-e-full "}`}><IoSearch /></button>
+                        <button className={`bg-base-200 pb-[12px] pt-[13px] md:pb-[19px] md:pt-[20px] px-[20px] ${isFocused || isValue ? "rounded-e" : "rounded-e-full "}`}><IoSearch /></button>
                     </div>
                     <div className="flex gap-[20px]">
                         <Link to={"/admission"}>

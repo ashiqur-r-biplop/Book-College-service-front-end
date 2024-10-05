@@ -15,6 +15,7 @@ import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 import Register from "../Pages/Login/Register";
 import Login from "../Pages/Login/Login";
 import Profile from "../Pages/Profile/Profile";
+import CollegeDetails from "../Pages/CollegeDetails/CollegeDetails";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
             {
                 path: "/login",
                 element: <Login />
+            },
+            {
+                path: `/college-details/:id`,
+                element: <CollegeDetails />
             },
             {
                 path: "/register",

@@ -39,7 +39,7 @@ const Collages = () => {
                                     <p>Admission Dates:{dob}</p>
                                     <p>Events: {subject}</p>
                                 </div>
-                                <Link to="/college-details" className="text-[#19191D] rounded-full border px-[20px] py-[5px] border-[#19191D] hover:bg-[#19191D] transition-all hover:text-[#dddd] duration-300">Details</Link>
+                                <Link to={`/college-details/${_id}`} className="text-[#19191D] rounded-full border px-[20px] py-[5px] border-[#19191D] hover:bg-[#19191D] transition-all hover:text-[#dddd] duration-300">Details</Link>
                                 <p className='absolute top-2 right-2 bg-[#FDE047] text-xs py-[4px] rounded-full px-[12px]'>Best College</p>
                             </div>
                         </div>

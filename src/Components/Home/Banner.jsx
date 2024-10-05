@@ -42,7 +42,7 @@ const Banner = () => {
                         <input
                             type="text"
                             placeholder="Search for a college name."
-                            className={`border p-2 py-[15px] px-[20px] transition-all duration-300 outline-none rounded-s-full text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px] rounded-s' : 'w-[150px]'
+                            className={`border p-2 py-[15px] px-[20px] transition-all duration-300 outline-none  text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px] rounded-s' : 'w-[150px] rounded-s-full'
                                 }`}
                             onFocus={() => setIsFocused(true)}
                             onBlur={() => setIsFocused(false)}
@@ -50,7 +50,7 @@ const Banner = () => {
                         />
                         <div className="absolute top-[53px] w-[100%]">
                             {
-                                loading ? <div className="h-[50px] flex justify-center items-center bg-base-200"><span className="loading loading-dots loading-sm"></span></div> : (isValue && data) && <div className="grid grid-cols-1 gap-[20px] bg-base-200 px-[10px] py-[20px] shadow-lg">
+                                loading ? <div className="h-[50px] flex justify-center items-center bg-base-200"><span className="loading loading-dots loading-sm"></span></div> : (isValue && ((data.length > 0))) ? <div className="grid grid-cols-1 gap-[20px] bg-base-200 px-[10px] py-[20px] shadow-lg">
                                     {
                                         data?.map((college, i) => {
                                             console.log(college);
@@ -67,15 +67,19 @@ const Banner = () => {
                                                 </div></Link>
                                         })
                                     }
-                                </div>
+                                </div> : ((data !== true) && data.length < 1) ? <p className="bg-base-200 py-[5px]">There is no college with this name <span className="text-red-500">{isValue.length < 7 ? `${isValue}.` : `${isValue.slice(0, 7)}..`}</span></p> : ""
                             }
                         </div>
 
                         <button className={`bg-base-200 pb-[19px] pt-[20px] px-[20px] ${isFocused || isValue ? "rounded-e" : "rounded-e-full "}`}><IoSearch /></button>
                     </div>
                     <div className="flex gap-[20px]">
-                        <button className="uppercase bg-[#fddf47af] hover:bg-[#FDE047] transition-all hover:text-[#19191D] border border-[#FDE047] rounded-full text-white md:text-[22px] px-[30px] py-[5px]">Get Started</button>
-                        <button className="uppercase  hover:bg-[#FDE047] transition-all hover:text-[#19191D] border border-[#FDE047] rounded-full text-[#FDE047] md:text-[22px] px-[30px] py-[5px]">Get Courses</button>
+                        <Link to={"/admission"}>
+                            <button className="uppercase bg-[#fddf47af] hover:bg-[#FDE047] transition-all hover:text-[#19191D] border border-[#FDE047] rounded-full text-white md:text-[22px] px-[30px] py-[5px]">Get Started</button>
+                        </Link>
+                        <Link to={"/colleges"}>
+                            <button className="uppercase  hover:bg-[#FDE047] transition-all hover:text-[#19191D] border border-[#FDE047] rounded-full text-[#FDE047] md:text-[22px] px-[30px] py-[5px]">Get Courses</button>
+                        </Link>
                     </div>
                 </div>
             </div>

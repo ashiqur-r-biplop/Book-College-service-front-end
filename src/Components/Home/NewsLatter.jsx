@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import funTimeImage from "../../../public/home-image/funTimeImage.png"
+import { Link } from 'react-router-dom';
 const NewsLatter = () => {
     return (
         <div className='container mx-auto !z-[999]'>
@@ -14,7 +15,9 @@ const NewsLatter = () => {
                 <div className='bg-[#757575a2] h-full p-[80px] flex justify-between items-center'>
                     <p className='text-2xl md:w-[40%] text-[#fff]'>To Boost Science Learning, Start Early 4 Ways to Explore Science
                         with Your Child</p>
-                    <button className='border border-[#FDE047] px-[30px] py-[5px] rounded-full text-[#FDE047] hover:bg-[#FDE047] hover:text-[#000] text-xl duration-300 transition-all'>Start Now</button>
+                    <Link to={"/admission"}>
+                        <button className='border border-[#FDE047] px-[30px] py-[5px] rounded-full text-[#FDE047] hover:bg-[#FDE047] hover:text-[#000] text-xl duration-300 transition-all'>Start Now</button>
+                    </Link>
                 </div>
             </div>
         </div>

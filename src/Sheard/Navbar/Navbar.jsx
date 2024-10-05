@@ -1,11 +1,12 @@
 /* eslint-disable no-unused-vars */
-import { useContext, useState } from 'react';
-import { Link, NavLink, useParams } from 'react-router-dom';
-import { IoSearch } from "react-icons/io5";
+import { useContext } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+
 import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext);
+
     console.log(user);
     const paths = [
         {
@@ -30,6 +31,7 @@ const Navbar = () => {
             .then((res) => { })
             .catch((err) => { });
     };
+
     return (
         <div className='bg-gray-900 p-4'>
             <nav className='container mx-auto'>

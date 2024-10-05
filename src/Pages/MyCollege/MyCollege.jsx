@@ -17,7 +17,7 @@ const MyCollege = () => {
 
     useEffect(() => {
         setLoad(true);
-        axios.get(`http://localhost:5000/single-admission-college/${selectedContact?._id}`)
+        axios.get(`https://book-college-services-server.vercel.app/single-admission-college/${selectedContact?._id}`)
             .then(data => {
                 setColleges(data?.data);
                 setLoad(false);
@@ -44,7 +44,7 @@ const MyCollege = () => {
         setControl(true);
         setLoad(true);
 
-        axios.post("http://localhost:5000/review", inputData)
+        axios.post("https://book-college-services-server.vercel.app/review", inputData)
             .then(data => {
                 if (data?.data?.insertedId) {
                     console.log('Review posted successfully:', data?.data);

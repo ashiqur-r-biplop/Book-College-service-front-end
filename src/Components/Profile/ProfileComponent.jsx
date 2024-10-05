@@ -15,7 +15,7 @@ const ProfileComponent = () => {
     const [selectedContact, setSelectedContact] = useState(null);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/single-user?email=${userEmail}`)
+        axios.get(`https://book-college-services-server.vercel.app/single-user?email=${userEmail}`)
             .then(data => {
                 setSelectedContact(data?.data);
             }).catch(err => {

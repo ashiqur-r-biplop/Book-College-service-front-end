@@ -48,7 +48,7 @@ const AuthProvider = ({ children }) => {
             if (currentUser) {
                 // console.log("data");
                 axios
-                    .post("http://localhost:5000/jwt", {
+                    .post("https://book-college-services-server.vercel.app/jwt", {
                         email: currentUser.email,
                     })
                     .then((data) => {

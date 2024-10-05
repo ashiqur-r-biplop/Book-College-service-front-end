@@ -58,7 +58,7 @@ const Register = () => {
                         address,
                     };
                     // console.log(saveUser);
-                    fetch("http://localhost:5000/users", {
+                    fetch("https://book-college-services-server.vercel.app/users", {
                         method: "POST",
                         headers: {
                             "content-type": "application/json",
@@ -104,7 +104,7 @@ const Register = () => {
                     role: "student",
                 };
                 // console.log(loggedUser);
-                fetch("http://localhost:5000/users", {
+                fetch("https://book-college-services-server.vercel.app/users", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json",

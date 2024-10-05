@@ -15,7 +15,7 @@ const CollegeDetails = () => {
     const navigate = useNavigate()
     useEffect(() => {
         setLoading(true)
-        axios.get(`http://localhost:5000/college-details/${id}`)
+        axios.get(`https://book-college-services-server.vercel.app/college-details/${id}`)
             .then(data => {
                 console.log(data?.data);
                 setLoading(false)
@@ -24,7 +24,7 @@ const CollegeDetails = () => {
             ).catch(err => {
                 console.log(err);
             })
-        axios.get(`http://localhost:5000/college-details-review/${id}`)
+        axios.get(`https://book-college-services-server.vercel.app/college-details-review/${id}`)
             .then(data => {
                 console.log(data?.data);
                 setLoading(false)

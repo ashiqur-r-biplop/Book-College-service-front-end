@@ -39,7 +39,7 @@ const Admission = () => {
                 studentPhoto: selectedContact.photo,
                 gander: selectedContact.gander,
             }
-            axios.post("http://localhost:5000/admission", admissionData)
+            axios.post("https://book-college-services-server.vercel.app/admission", admissionData)
                 .then(data => {
                     if (data?.data?.insertedId) {
                         Swal.fire("Good job!", "Admission successful", "success");

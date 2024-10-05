@@ -9,7 +9,7 @@ const Colleges = () => {
     const [loading, setLoading] = useState(false)
     useEffect(() => {
         setLoading(true)
-        axios?.get("http://localhost:5000/colleges")
+        axios?.get("https://book-college-services-server.vercel.app/colleges")
             .then(data => {
                 setData(data?.data)
                 setLoading(false)

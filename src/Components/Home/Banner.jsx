@@ -11,7 +11,7 @@ const Banner = () => {
     const [data, setData] = useState([])
     useEffect(() => {
         setLoading(true)
-        axios?.get("http://localhost:5000/colleges")
+        axios?.get("https://book-college-services-server.vercel.app/colleges")
             .then(data => {
                 const value = data?.data?.filter((college, i) =>
                     college?.collegeName.toLowerCase().includes(isValue.toLowerCase())

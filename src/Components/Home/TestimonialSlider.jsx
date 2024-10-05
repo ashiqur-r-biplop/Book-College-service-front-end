@@ -49,7 +49,7 @@ const TestimonialSlider = () => {
     const [loading, setLoading] = useState(false)
     useEffect(() => {
         setLoading(true)
-        axios.get("http://localhost:5000/review")
+        axios.get("https://book-college-services-server.vercel.app/review")
             .then(data => {
                 setTestimonial(data?.data); setLoading(false)
             })

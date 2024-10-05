@@ -18,7 +18,7 @@ const UpdateUserProfileModal = ({ selectedContact, setLoad }) => {
         }
         console.log(newData);
         setLoad(true)
-        axios.patch(`http://localhost:5000/single-user/${selectedContact?._id}`, newData)
+        axios.patch(`https://book-college-services-server.vercel.app/single-user/${selectedContact?._id}`, newData)
             .then(data => {
                 console.log(data);
                 if (data) {

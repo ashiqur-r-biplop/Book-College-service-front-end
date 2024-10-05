@@ -12,7 +12,7 @@ export const useGetUserEmail = () => {
     useEffect(() => {
         if (userEmail) {
             setLoading(true);  // Set loading state when request starts
-            axios.get(`http://localhost:5000/single-user?email=${userEmail}`)
+            axios.get(`https://book-college-services-server.vercel.app/single-user?email=${userEmail}`)
                 .then(response => {
                     setSelectedContact(response?.data);
                 })

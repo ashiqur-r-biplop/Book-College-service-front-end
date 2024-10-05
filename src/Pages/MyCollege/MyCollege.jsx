@@ -103,8 +103,8 @@ const MyCollege = () => {
 
             {/* Popup Modal for Review Form */}
             {isPopupOpen && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                    <div className="bg-white p-4 rounded shadow-lg w-full max-w-md">
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center px-[10px]">
+                    <div className="bg-white p-4 rounded shadow-lg w-full md:max-w-md">
                         <h2 className="text-xl mb-4">Add Review for {selectedCollege?.collegeName}</h2>
                         <form onSubmit={handleReviewSubmit}>
                             <textarea

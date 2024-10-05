@@ -32,17 +32,17 @@ const Banner = () => {
             backgroundAttachment: "fixed",
         }}>
             <div className="bg-[#111827a6] w-full h-full flex justify-center items-center py-[40px]">
-                <div className="flex justify-center flex-col items-center text-center gap-[50px] ">
+                <div className="flex justify-center flex-col items-center text-center gap-[20px] md:gap-[50px] ">
                     <div>
                         <h1 className="text-[#FDE047] font-bold uppercase text-[28px] md:text-[36px] lg:text-[52px]">Perfect Education Courses</h1>
                         <p className="md:w-[60%] mx-auto md:text-[22px] text-[#eeeeee] mt-[10px]">New skills and knowledge can spark a lifetime of change. For 60 years, Education Development
                             Center (EDC), has designed and delivered programs in education, health</p>
                     </div>
-                    <div className="hidden lg:flex justify-center items-center relative">
+                    <div className="flex justify-center items-center relative">
                         <input
                             type="text"
                             placeholder="Search for a college name."
-                            className={`border p-2 py-[15px] px-[20px] transition-all duration-300 outline-none  text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px] rounded-s' : 'w-[150px] rounded-s-full'
+                            className={`border p-2 md:py-[15px] px-[20px] transition-all duration-300 outline-none  text-white ease-in-out placeholder:text-[#858585] bg-transparent ${isValue || isFocused ? 'md:w-[300px] rounded-s' : 'w-[150px] rounded-s-full'
                                 }`}
                             onFocus={() => setIsFocused(true)}
                             onBlur={() => setIsFocused(false)}
@@ -71,7 +71,7 @@ const Banner = () => {
                             }
                         </div>
 
-                        <button className={`bg-base-200 pb-[19px] pt-[20px] px-[20px] ${isFocused || isValue ? "rounded-e" : "rounded-e-full "}`}><IoSearch /></button>
+                        <button className={`bg-base-200 pb-[12px] pt-[13px] px-[20px] ${isFocused || isValue ? "rounded-e" : "rounded-e-full "}`}><IoSearch /></button>
                     </div>
                     <div className="flex gap-[20px]">
                         <Link to={"/admission"}>

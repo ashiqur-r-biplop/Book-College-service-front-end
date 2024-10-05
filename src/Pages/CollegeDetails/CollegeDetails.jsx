@@ -37,21 +37,21 @@ const CollegeDetails = () => {
 
     if (loading) return <Spinner />
     return (
-        <div className="p-4 container mx-auto">
+        <div className="p-4 container mx-auto mb-[70px]">
             <div className='my-[10px]'>
                 <button onClick={() => navigate(-1)} className='flex px-[20px] py-[4px] items-center gap-[5px] border border-[#19191D] hover:bg-[#19191D] hover:text-[#ddd] duration-300 transition-all shadow-2xl'><IoMdArrowRoundBack />
                     <span>back</span></button>
             </div>
-            <div className='flex gap-[20px]'>
+            <div className='flex flex-col md:flex-row gap-[20px]'>
                 <div className='md:w-[50%] md:h-[500px] lg:h-[700px] border p-[50px]'>
                     <img src={CollegePhoto || photo} alt="" className='h-full w-full object-contain' />
                 </div>
                 <div className='border md:w-[50%] flex flex-col gap-[20px] p-[20px] md:p-[70px]'>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex flex-col md:flex-row justify-between md:items-center'>
                         <p><span className='text-orange-500'>CollegeId:</span> {_id}</p>
                         <p> <span className='text-orange-500'>Date:</span>{dob}</p>
                     </div>
-                    <h1 className='text-[52px] uppercase text-orange-500'>{collegeName}</h1>
+                    <h1 className='text-[32px] md:text-[52px] uppercase text-orange-500'>{collegeName}</h1>
                     <p className='text-[20px] capitalize'>Subject Name : {subject}</p>
                     <p className='text-[20px] capitalize'>Address : {address}</p>
 

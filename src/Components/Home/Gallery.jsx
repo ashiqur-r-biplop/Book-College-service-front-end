@@ -56,8 +56,8 @@ const Gallery = () => {
                 <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 ">
                     <button className="absolute top-4 right-4 text-white text-3xl !z-[9999]" onClick={closeFullscreen}>×</button>
                     <div className="relative w-full h-full flex justify-center items-center">
-                        <img className="max-w-full max-h-[80vh] w-[60%] h-[60%] object-cover" src={gallery[currentIndex]} alt="" />
-                        <div className='absolute top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 w-[80%] mx-auto  flex justify-between items-center text-[26px]'>
+                        <img className="max-w-full max-h-[80vh] w-[80%] md:w-[60%] md:h-[60%] object-cover" src={gallery[currentIndex]} alt="" />
+                        <div className='absolute top-1/2 transform -translate-y-1/2 text-white text-3xl px-4 w-[100%] md:w-[80%] mx-auto  flex justify-between items-center text-[26px]'>
                             <button onClick={prevImage}><FaChevronLeft />
                             </button>
                             <button onClick={nextImage}><FaChevronRight />

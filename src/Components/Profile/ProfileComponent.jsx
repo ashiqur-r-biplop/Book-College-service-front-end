@@ -43,7 +43,7 @@ const ProfileComponent = () => {
     }
     return (
         <div>
-            <div className="max-w-[1200px] mx-auto w-[80%] pt-[100px]">
+            <div className="max-w-[1200px] mx-auto w-[80%] pt-[100px] mb-[70px] ">
                 <div className="w-full flex justify-center items-center">
                     <div className="max-w-xs h-100 px-4 py-3 rounded-md shadow-md bg-gray-50 text-gray-800 w-[250px]">
                         <img

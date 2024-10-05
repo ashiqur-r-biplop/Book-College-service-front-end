@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useContext, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import googleImg from "../../assets/socialLoiginImg/google.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
-    const { login, signInGoogle, setLoading, auth } = useContext(AuthContext);
+    const { user, login, signInGoogle, setLoading, auth } = useContext(AuthContext);
     const [toggleIcon, setToggleIcon] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
@@ -85,7 +85,9 @@ const Login = () => {
             })
             .catch((err) => { console.log(err); });
     };
-
+    if (user) {
+        return <Navigate to={"/"}></Navigate>
+    }
     return (
         <div className=" bg-[#020413c9] h-[100%]">
             <div className="container mx-auto ">

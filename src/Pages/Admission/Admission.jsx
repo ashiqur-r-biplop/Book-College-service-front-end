@@ -59,7 +59,7 @@ const Admission = () => {
     };
 
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto mb-[70px] '>
             <form onSubmit={handleSubmit} className="p-4 flex flex-col gap-[10px]">
                 <div>
                     <p><span className='text-red-600'>*</span>Enter Your College Name</p>

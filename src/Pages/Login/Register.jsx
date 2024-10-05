@@ -85,7 +85,6 @@ const Register = () => {
                         backgroundColor: "#fde047",
                     },
                     title: `${err.message}`,
-                    footer: '<a href="">Why do I have this issue?</a>',
                 });
             });
     };

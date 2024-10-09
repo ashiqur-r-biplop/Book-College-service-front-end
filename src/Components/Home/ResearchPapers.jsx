@@ -10,7 +10,7 @@ const ResearchPapers = () => {
                 <div className='w-full md:w-[550px] mx-auto'>
                     <img src={ResearchImage} alt="" />
                 </div>
-                <div className='flex gap-[20px]'>
+                <div className='flex flex-wrap justify-center items-center gap-[20px]'>
                     <Link target='_blank' to={"https://www.lawinsider.com/dictionary/specified-document"} className='text-[#111827] border-b hover:border-b-[#ff5f1f]  active:text-[#ff5f1f] hover:text-[#ff5f1f] duration-300 transition-all border-[#111827]'>Specific</Link>
                     <Link target='_blank' to={"https://asana.com/resources/feasibility-study"} className='text-[#111827] border-b hover:border-b-[#ff5f1f]  active:text-[#ff5f1f] hover:text-[#ff5f1f] duration-300 transition-all border-[#111827]'>Feasible</Link>
                     <Link target='_blank' to={"https://www.lawinsider.com/dictionary/original-document#:~:text=Original%20Document%20means%20the%20initially,same%20effect%20by%20the%20creator."} className='text-[#111827] border-b hover:border-b-[#ff5f1f]  active:text-[#ff5f1f] hover:text-[#ff5f1f] duration-300 transition-all border-[#111827]'>Original</Link>
